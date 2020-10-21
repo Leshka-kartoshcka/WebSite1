@@ -8,13 +8,57 @@
  			color: red;
  			font-size: 40px;
  		}
+ 		
+ 			
+
+ 	
  		.background {
  			 	background-color:lightcyan;
  		} 
+ 		h1 {
+ 			background-color: lightgrey;
+    		border: 5px solid #b81616;
+   	 		box-sizing: border-box;
+	   		padding: 15px 15px;
+	   		width: fit-content;
+ 		}
+ 		body {
+ 			margin: 20px;
+ 			max-width: 800px;
+ 			font-family: Helvetica;
+ 		}
+ 		p {
+ 			margin: 5px;
+ 			width: 100%
+ 		}
+ 		
+
+ 		}
+ 		.hint{
+ 			display: block;
+ 			position: relative;
+ 		}
+ 		.hint:hover::after{
+ 			content: attr(dtitle);
+ 			color: black;
+ 			background-color: white;
+ 			width: 100%;
+ 			height: auto;
+ 			position: relative;
+ 			top:10px;
+ 			left: 10px;
+ 			font-family: Helvetica;
+ 			font-size: 15px;
+ 			font-style: italic;
+ 			border: 3px solid: #333;
+
+
+ 		}
  	</style>
  </head>
  <body>
 	<h1 class="bigheading">The Heading</h1> 
-	<p class="background">Первый параграф, в котором есть <a href="https://yandex.ru/" target="_blank" title >ссылка</a></p>
+	<p class="background">Первый параграф, в котором есть <a href="https://yandex.ru/" target="_blank" class="hint" dtitle="Яндекс" >ссылка</a> 
+	</p>
  </body>
  </html>
